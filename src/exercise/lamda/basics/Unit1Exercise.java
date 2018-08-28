@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 
 public class Unit1Exercise {
 
-    public static void main(String[] s){
+    public static void main(String[] args){
 
         List<Person> people = Arrays.asList(
                 new Person("Charles", "Dickens", 60),
