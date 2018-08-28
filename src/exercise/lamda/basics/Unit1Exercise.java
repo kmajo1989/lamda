@@ -37,6 +37,11 @@ public class Unit1Exercise {
         System.out.println("Printing all person last name starting with C");
         performConditionally(people, p -> p.getLastName().startsWith("C"),q -> System.out.println(q.getAge()));
 
+        //Print all elements in the list
+//        System.out.println("Using Lamda For each iteration");
+//
+//        people.forEach(System.out::println);// same as people.forEach(p -> System.out.println(p));
+
 
     }
 
@@ -48,6 +53,12 @@ public class Unit1Exercise {
             }
 
         }
+
+        //Using stream in Java8
+        System.out.println("Using Stream");
+        people.stream()
+                .filter(p -> p.getLastName().startsWith("C"))
+                .forEach(q->System.out.println(q.getAge()));
 
     }
 
